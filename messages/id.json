@@ -1,0 +1,79 @@
+{
+  "data": {
+    "Link": {
+      "Layanan": "Layanan",
+      "Profile": "Profil",
+      "VisiMisi": "Visi dan Misi",
+      "Testimoni": "Testimoni"
+    },
+    "Header": {
+      "subTitle": "Kami menghububgkan 120,000 Tenaga Kerja Indonesia",
+      "title": "Wujudkan impian anda Bekerja di Jepang.",
+      "description": "Inka Global Management (IGM) adalah perusahaan yang berkomitmen untuk mendukung tenaga kerja Indonesia mengembangkan karier di Jepang melalui layanan lengkap, mulai dari pengurusan visa, perpindahan pekerjaan, hingga interpretasi dan penerjemahan, serta studi banding dan pengantar ke sekolah bahasa Jepang. Dengan pengalaman dan jaringan luas, kami memastikan setiap pekerja dan perusahaan menemukan solusi terbaik yang berkelanjutan."
+    },
+    "Layanan": {
+      "title": "Layanan",
+      "PengurusanVisa": {
+        "title": "Pengurusan Visa",
+        "description": "Pengurusan visa di IGM sangat mudah dan terstruktur. Kami menangani semua jenis visa kerja, termasuk visa engineer dan visa tokutei-ginou. Setiap pemohon akan mendapatkan pendampingan penuh mulai dari pengumpulan dokumen hingga pengajuan visa. Kami juga menyediakan konsultasi bagi calon tenaga kerja yang ingin memahami lebih lanjut mengenai persyaratan visa dan prosesnya."
+      },
+      "Terhubung": {
+        "title": "Connect Company",
+        "description": " Melalui layanan ini, IGM membantu mempertemukan tenaga kerja Indonesia dengan perusahaan-perusahaan di Jepang yang membutuhkan kualifikasi dan keterampilan tertentu. Kami bekerja sama dengan berbagai industri di Jepang, seperti teknik, manufaktur, konstruksi, dan perhotelan, untuk menyediakan peluang kerja yang sesuai bagi tenaga kerja Indonesia. IGM memastikan proses matching berjalan lancar dengan memahami kebutuhan kedua belah pihak."
+      },
+      "InterpretasiPenerjemah": {
+        "title": "Interpretasi & Penerjemah",
+        "description": "IGM menyediakan layanan interpretasi dan penerjemahan profesional untuk berbagai keperluan, baik bisnis maupun personal. Kami memastikan komunikasi antara pekerja dan perusahaan Jepang berjalan efektif, terutama dalam hal negosiasi kontrak, rapat, dan penyusunan dokumen resmi. Layanan ini penting bagi tenaga kerja yang belum fasih berbahasa Jepang atau perusahaan yang ingin menjalin komunikasi yang lebih baik dengan pekerja asing."
+      },
+      "StudiBunding": {
+        "title": "Studi Bunding",
+        "description": "IGM menawarkan program studi banding bagi mereka yang ingin mempelajari praktik terbaik di Jepang. Program ini dirancang untuk pelajar, profesional, atau perusahaan yang ingin memahami budaya kerja dan sistem industri di Jepang. Kami mengatur kunjungan ke perusahaan-perusahaan dan institusi terkemuka di berbagai sektor industri, memberikan wawasan langsung tentang inovasi dan manajemen di Jepang."
+      },
+      "SekolahBahasaJepang": {
+        "title": "Sekolah Bahasa Jepang",
+        "description": " Bagi mereka yang ingin meningkatkan kemampuan bahasa Jepang, IGM menyediakan layanan pengenalan dan penghubung ke sekolah bahasa Jepang terakreditasi. Kami membantu calon pelajar menemukan sekolah yang sesuai dengan kebutuhan dan level kemampuan bahasa, mulai dari pemula hingga tingkat lanjutan."
+      }
+    },
+    "Profile": {
+      "title": "Profil",
+      "description": "Inka Global Management (IGM) adalah perusahaan yang berfokus pada layanan pengelolaan sumber daya manusia asing, khususnya tenaga kerja asal Indonesia yang ingin bekerja di Jepang. Kami berkomitmen untuk memberikan solusi lengkap dalam hal pengurusan visa, interpretasi, dan penerjemahan, serta memastikan setiap tenaga kerja mendapatkan kesempatan dan perlindungan terbaik selama bekerja di Jepang",
+      "Licence": {
+        "igm": "No. Lisensi IGM",
+        "tsk": "No. Lisensi Torokushiken"
+      }
+    },
+    "VisiMisi": {
+      "title": "Visi dan Misi",
+      "visi": {
+        "title": "Visi",
+        "description": "Menjadi perusahaan terdepan dalam menyediakan layanan lengkap dan terpercaya bagi tenaga kerja Indonesia yang ingin berkarier di Jepang, dengan fokus pada pengurusan visa, perpindahan pekerjaan, interpretasi, serta pendidikan bahasa dan budaya, untuk menciptakan hubungan profesional yang harmonis dan berkelanjutan antara pekerja dan perusahaan di Jepang."
+      },
+      "misi": {
+        "title": "Misi",
+        "1": "Memfasilitasi pengurusan visa bagi tenaga kerja Indonesia, termasuk perpanjangan dan perubahan status visa (dari magang ke tokutei-ginou atau engineer) dengan standar layanan yang cepat dan tepat sesuai peraturan yang berlaku.",
+        "2": "Mendukung pengembangan karier pekerja Indonesia di Jepang melalui layanan perpindahan pekerjaan yang efektif, dengan memastikan setiap pekerja menemukan peluang yang sesuai dengan keterampilan dan aspirasi mereka.",
+        "3": "Menjadi penghubung antara tenaga kerja dan perusahaan Jepang melalui layanan Connect Company yang memastikan kecocokan profesional serta menciptakan peluang kerja yang berkelanjutan.",
+        "4": "Menyediakan layanan interpretasi dan penerjemahan yang akurat dan profesional untuk memfasilitasi komunikasi yang efektif antara pekerja asing dan perusahaan Jepang.",
+        "5": "Memberikan kesempatan pengembangan keterampilan bahasa dan budaya Jepang melalui pengantar ke sekolah bahasa (shoukai nihongo gakko) dan program studi banding, untuk meningkatkan adaptasi dan keberhasilan di lingkungan kerja Jepang.",
+        "6": "Menciptakan lingkungan kerja yang inklusif dan mendukung bagi tenaga kerja asing di Jepang, dengan memberikan konsultasi, pendampingan, dan layanan menyeluruh dari proses awal hingga keberlanjutan karier di Jepang."
+      }
+    },
+    "QnA": {
+      "title": "QnA",
+      "Question": {
+        "1": "Apa saja layanan yang ditawarkan oleh Inka Global Management (IGM)?",
+        "2": "Bagaimana cara IGM membantu pengurusan visa bagi tenaga kerja Indonesia?",
+        "3": "Apakah IGM menyediakan layanan untuk perpindahan pekerjaan di Jepang?",
+        "4": "Bagaimana cara IGM mendukung tenaga kerja yang ingin belajar bahasa Jepang?",
+        "5": "Apa itu layanan Connect Company dari IGM?"
+      },
+      "Answer": {
+        "1": "IGM menawarkan berbagai layanan bagi tenaga kerja Indonesia di Jepang, termasuk pengurusan visa (perpanjangan dan perubahan status visa), perpindahan pekerjaan, introduksi ke perusahaan Jepang (Connect Company), layanan interpretasi dan penerjemahan, program studi banding, serta pengantar ke sekolah bahasa Jepang (shoukai nihongo gakko).",
+        "2": "IGM membantu dalam pengurusan visa engineer dan tokutei-ginou, serta menangani perpanjangan visa. Untuk perubahan status visa, IGM membantu pekerja yang ingin beralih dari magang ke tokutei-ginou atau engineer, dengan memastikan mereka memenuhi syarat seperti JFT A2 dan SSW untuk tokutei-ginou, serta ijazah yang sesuai untuk visa engineer.",
+        "3": "Ya, IGM menawarkan layanan perpindahan pekerjaan (job transition) bagi tenaga kerja asing di Jepang yang ingin mencari peluang kerja baru. Layanan ini mencakup konsultasi karier, pengurusan dokumen visa jika diperlukan, serta pencarian peluang kerja yang sesuai dengan kualifikasi tenaga kerja.",
+        "4": "IGM menyediakan layanan pengantar ke sekolah-sekolah bahasa Jepang terakreditasi (shoukai nihongo gakko). Kami membantu tenaga kerja atau pelajar menemukan sekolah bahasa yang sesuai dengan kebutuhan dan level kemampuan mereka, baik untuk persiapan bekerja di Jepang atau meningkatkan kemampuan bahasa selama bekerja di Jepang.",
+        "5": "Layanan Connect Company dari IGM membantu tenaga kerja Indonesia di Jepang menemukan pekerjaan yang sesuai dengan kualifikasi mereka. IGM bekerja sama dengan perusahaan-perusahaan di berbagai sektor, seperti teknik, manufaktur, dan perhotelan, untuk mencocokkan tenaga kerja dengan kebutuhan perusahaan yang tepat, menciptakan peluang kerja yang berkelanjutan."
+      }
+    }
+  }
+}
