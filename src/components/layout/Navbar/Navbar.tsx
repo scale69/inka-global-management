@@ -2,7 +2,6 @@ import { DarkModeButton } from "./DarkModeButton";
 import { LinkNav } from "./LinkNav";
 import { LanguageButton } from "./LanguageButton";
 import { Link } from "@/i18n/routing";
-import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   return (
@@ -25,7 +24,6 @@ export default function Navbar() {
           <DarkModeButton />
           {/* </div> */}
           <LanguageButton />
-          <MobileNav />
         </div>
       </div>
     </div>
