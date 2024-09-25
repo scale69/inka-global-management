@@ -7,10 +7,6 @@ export const routing = defineRouting({
 
   // Used when no locale matches
   defaultLocale: "jp",
-  pathnames: {
-    "/": "/",
-    "/visa": "/visa",
-  },
 });
 
 // Lightweight wrappers around Next.js' navigation APIs
