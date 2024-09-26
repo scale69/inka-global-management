@@ -10,7 +10,7 @@ export default function Home() {
   const data = useTranslations("data");
 
   return (
-    <main className="flex flex-col justify-center items-center w-full min-h-screen py-24 lg:py-10">
+    <main className=" flex flex-col justify-center items-center w-full min-h-screen py-24 lg:py-10">
       <Header data={data} />
       <Layanan data={data} />
       <Profile data={data} />

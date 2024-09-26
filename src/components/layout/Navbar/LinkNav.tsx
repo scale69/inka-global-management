@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import Link from "next/link";
 
@@ -13,11 +11,11 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { useTranslations } from "next-intl";
+type DataProps = {
+  data: (key: string) => string;
+};
 
-export function LinkNav() {
-  const data = useTranslations("data");
-
+export function LinkNav({ data }: DataProps) {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -61,6 +59,13 @@ export function LinkNav() {
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               {data("Link.Testimoni")}
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/docs" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              {data("Link.About")}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
