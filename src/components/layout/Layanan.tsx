@@ -103,8 +103,9 @@ export default function Layanan({ data }: DataProps) {
             variants={fadeIn("up", 0.2)} // Menambahkan argumen kedua untuk memperbaiki kesalahan
             initial={"hidden"}
             whileInView={"show"}
+            key={item.id}
           >
-            <Card key={item.id} className="h-[450px] dark:bg-black/35">
+            <Card className="h-[450px] dark:bg-black/35">
               <CardHeader>
                 <div className="my-2">{item.icon}</div>
                 <CardTitle>{item.title}</CardTitle>
