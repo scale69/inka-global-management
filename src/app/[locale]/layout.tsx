@@ -32,7 +32,7 @@ export default async function RootLayout({
 }>) {
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html className="scroll-smooth" lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F1F4F5] dark:bg-[#121212] `}
       >

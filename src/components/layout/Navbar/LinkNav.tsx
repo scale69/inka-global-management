@@ -1,5 +1,4 @@
 import * as React from "react";
-import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import {
@@ -11,6 +10,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Link } from "@/i18n/routing";
 type DataProps = {
   data: (key: string) => string;
 };
@@ -53,9 +53,9 @@ export function LinkNav({ data }: DataProps) {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {data("Link.Testimoni")}
+              {data("Link.About")}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

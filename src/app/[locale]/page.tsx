@@ -1,5 +1,6 @@
-import Ask from "@/components/layout/Ask";
-import Contact from "@/components/layout/contact";
+"use client";
+
+import Ask from "@/components/layout/About/Ask";
 import Header from "@/components/layout/Header";
 import Layanan from "@/components/layout/Layanan";
 import Profile from "@/components/layout/Profile";
@@ -16,7 +17,6 @@ export default function Home() {
       <Profile data={data} />
       <VisiMisi data={data} />
       <Ask data={data} />
-      <Contact />
     </main>
   );
 }

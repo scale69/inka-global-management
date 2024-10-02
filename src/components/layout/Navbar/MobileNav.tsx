@@ -39,7 +39,7 @@ export default function MobileNav({ data }: DataProps) {
                 <Link href={"#"}> {data("Link.Testimoni")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
-                <Link href={"#"}> {data("Link.About")}</Link>
+                <Link href={"/about"}> {data("Link.About")}</Link>
               </Button>
             </div>
             <DarkModeButton />

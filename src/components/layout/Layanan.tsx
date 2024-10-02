@@ -10,9 +10,11 @@ import { RiTranslate } from "react-icons/ri";
 import { MdTravelExplore } from "react-icons/md";
 import { IoSchoolOutline } from "react-icons/io5";
 import { GrDocumentTime } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 import { Button } from "../ui/button";
 import { Link } from "@/i18n/routing";
+import { fadeIn } from "@/lib/Framer/Variants";
 
 type DataProps = {
   data: (key: string) => string;
@@ -87,29 +89,40 @@ export default function Layanan({ data }: DataProps) {
 
   return (
     <div className="flex p-5 flex-col  gap-10 items-center justify-center w-full h-full">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 border-4 border-amber-400 rounded-3xl p-5 py-12 md:py-14 md:p-10 justify-center items-center   max-w-5xl">
+      <motion.div
+        variants={fadeIn("up", 0.5)} // Menambahkan argumen kedua untuk memperbaiki kesalahan
+        initial={"hidden"}
+        whileInView={"show"}
+        className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 border-4 border-amber-400 rounded-3xl p-5 py-12 md:py-14 md:p-10 justify-center items-center   max-w-5xl"
+      >
         <h1 className="absolute -top-5 left-5 px-5 text-green-700 text-4xl font-semibold bg-[#F1F4F5] dark:bg-[#121212]">
           {data("Layanan.title")}
         </h1>
         {dataLayanan.map((item: LayananProps) => (
-          <Card key={item.id} className="h-[450px] dark:bg-black/35">
-            <CardHeader>
-              <div className="my-2">{item.icon}</div>
-              <CardTitle>{item.title}</CardTitle>
-            </CardHeader>
-            <CardContent className="text-sm text-justify">
-              {item.description}
-            </CardContent>
-            <CardFooter>
-              {item.selengkapnya && (
-                <Button asChild>
-                  <Link href={"/visa"}>Selengkapnya</Link>
-                </Button>
-              )}
-            </CardFooter>
-          </Card>
+          <motion.div
+            variants={fadeIn("up", 0.2)} // Menambahkan argumen kedua untuk memperbaiki kesalahan
+            initial={"hidden"}
+            whileInView={"show"}
+          >
+            <Card key={item.id} className="h-[450px] dark:bg-black/35">
+              <CardHeader>
+                <div className="my-2">{item.icon}</div>
+                <CardTitle>{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-justify">
+                {item.description}
+              </CardContent>
+              <CardFooter>
+                {item.selengkapnya && (
+                  <Button asChild>
+                    <Link href={"/visa"}>Selengkapnya</Link>
+                  </Button>
+                )}
+              </CardFooter>
+            </Card>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

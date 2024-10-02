@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Card } from "../ui/card";
+import { Card } from "../../ui/card";
 
 type DataProps = {
   data: (key: string) => string;
