@@ -17,6 +17,7 @@ export function LanguageButton() {
   const router = useRouter();
 
   const handelChange = () => {};
+  console.log(handelChange);
 
   return (
     <DropdownMenu>
