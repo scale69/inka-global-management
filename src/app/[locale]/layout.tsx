@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -45,6 +46,7 @@ export default async function RootLayout({
             <AntdRegistry>
               <Navbar />
               {children}
+              <Footer />
             </AntdRegistry>
           </NextIntlClientProvider>
         </ThemeProvider>

@@ -27,16 +27,16 @@ export default function MobileNav({ data }: DataProps) {
           <SheetDescription className="flex  gap-5 p-5 py-10 flex-col  w-full ">
             <div className="flex flex-col gap-5 w-full">
               <Button asChild variant={"outline"} className="w-full">
-                <Link href={"#"}>{data("Layanan.title")}</Link>
+                <Link href={"/#layanan"}>{data("Layanan.title")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
-                <Link href={"#"}> {data("Link.Profile")}</Link>
+                <Link href={"/#profile"}> {data("Link.Profile")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
-                <Link href={"#"}> {data("Link.VisiMisi")}</Link>
+                <Link href={"/#visismisi"}> {data("Link.VisiMisi")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
-                <Link href={"#"}> {data("Link.Testimoni")}</Link>
+                <Link href={"#testimoni"}> {data("Link.Testimoni")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
                 <Link href={"/about"}> {data("Link.About")}</Link>

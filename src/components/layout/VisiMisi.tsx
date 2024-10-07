@@ -15,7 +15,10 @@ type DataProps = {
 };
 export default function VisiMisi({ data }: DataProps) {
   return (
-    <div className="flex p-5 md:p-16 flex-col  gap-10 items-center  justify-center w-full h-full">
+    <div
+      id="visimisi"
+      className="flex p-5 md:p-16 flex-col  gap-10 items-center  justify-center w-full h-full"
+    >
       <h1 className="text-4xl md:text-3xl lg:text-4xl  w-full  font-semibold text-center  ">
         {data("VisiMisi.title")}
       </h1>

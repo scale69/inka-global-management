@@ -8,7 +8,10 @@ type DataProps = {
 
 export default function Profile({ data }: DataProps) {
   return (
-    <div className="flex p-5 md:p-16 flex-col md:flex-row my-6 bg-green-700 dark:bg-[#121212]  gap-10 items-center md:items-start justify-center w-full h-full">
+    <div
+      id="profile"
+      className="flex p-5 md:p-16 flex-col md:flex-row my-6 bg-green-700 dark:bg-[#121212]  gap-10 items-center md:items-start justify-center w-full h-full"
+    >
       <div className="flex  flex-col gap-4">
         <h1 className="text-4xl text-white md:text-3xl lg:text-4xl  w-full  font-semibold text-center md:text-start ">
           {data("Profile.title")}

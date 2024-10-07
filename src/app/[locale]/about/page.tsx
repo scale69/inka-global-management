@@ -83,13 +83,17 @@ export default function Page() {
               loading="lazy"
             ></iframe>
             <div>
-              <div className="flex items-center gap-2">
+              <a
+                href="https://maps.app.goo.gl/AUYSpJPhkdYoL19AA"
+                target="_blank"
+                className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              >
                 <IoLocationSharp size={20} />
                 <span className="text-sm">
                   〒 533-0023 大阪府大阪市東淀川区東淡路4丁目17-15
                   岩瀬スペース213号室
                 </span>
-              </div>
+              </a>
             </div>
           </div>
 

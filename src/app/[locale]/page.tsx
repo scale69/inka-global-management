@@ -1,5 +1,3 @@
-"use client";
-
 import Ask from "@/components/layout/About/Ask";
 import Header from "@/components/layout/Header";
 import Layanan from "@/components/layout/Layanan";
@@ -13,7 +11,7 @@ export default function Home() {
   return (
     <main className=" flex flex-col justify-center items-center w-full min-h-screen py-24 lg:py-10">
       <Header data={data} />
-      <Layanan data={data} />
+      <Layanan />
       <Profile data={data} />
       <VisiMisi data={data} />
       <Ask data={data} />

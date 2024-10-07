@@ -1,3 +1,4 @@
+"use client";
 import {
   Card,
   CardContent,
@@ -15,10 +16,7 @@ import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { Link } from "@/i18n/routing";
 import { fadeIn } from "@/lib/Framer/Variants";
-
-type DataProps = {
-  data: (key: string) => string;
-};
+import { useTranslations } from "next-intl";
 
 type LayananProps = {
   id: number;
@@ -27,7 +25,8 @@ type LayananProps = {
   description: string;
   selengkapnya?: boolean;
 };
-export default function Layanan({ data }: DataProps) {
+export default function Layanan() {
+  const data = useTranslations("data");
   const dataLayanan = [
     {
       id: 1,
@@ -88,7 +87,10 @@ export default function Layanan({ data }: DataProps) {
   ];
 
   return (
-    <div className="flex p-5 flex-col  gap-10 items-center justify-center w-full h-full">
+    <div
+      id="layanan"
+      className="flex p-5 flex-col  gap-10 items-center justify-center w-full h-full"
+    >
       <motion.div
         variants={fadeIn("up", 0.5)} // Menambahkan argumen kedua untuk memperbaiki kesalahan
         initial={"hidden"}
