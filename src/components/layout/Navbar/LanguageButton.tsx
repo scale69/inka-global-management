@@ -16,9 +16,6 @@ export function LanguageButton() {
   const pathname: string = usePathname();
   const router = useRouter();
 
-  const handelChange = () => {};
-  console.log(handelChange);
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
