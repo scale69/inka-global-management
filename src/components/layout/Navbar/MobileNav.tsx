@@ -33,7 +33,7 @@ export default function MobileNav({ data }: DataProps) {
                 <Link href={"/#profile"}> {data("Link.Profile")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
-                <Link href={"/#visismisi"}> {data("Link.VisiMisi")}</Link>
+                <Link href={"/#visimisi"}> {data("Link.VisiMisi")}</Link>
               </Button>
               <Button asChild variant={"outline"} className="w-full">
                 <Link href={"#testimoni"}> {data("Link.Testimoni")}</Link>
