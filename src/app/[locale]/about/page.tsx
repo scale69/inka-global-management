@@ -2,6 +2,7 @@ import Contact from "@/components/layout/About/contact";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";
+import Markdown from "./Markdown";
 
 export default function Page() {
   const data = useTranslations("data");
@@ -32,7 +33,7 @@ export default function Page() {
               <div className="relative w-60 h-60 md:w-96 md:h-96 rounded-full shadow-md overflow-hidden">
                 <Image src="/img/me.png" alt="me-photo" fill quality={75} />
               </div>
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <p className="text-sm text-justify max-w-2xl">
                   Sebagai CEO, saya merasa terhormat untuk memimpin perusahaan
                   yang didedikasikan sepenuhnya dalam mendukung tenaga kerja
@@ -70,6 +71,9 @@ export default function Page() {
                   <span>Anidika Pramana</span>
                   <span>CEO, Inka Global Management (IGM)</span>
                 </div>
+              </div> */}
+              <div className="text-sm text-justify max-w-2xl porse">
+                <Markdown isi={data("CEO_Message")} />
               </div>
             </div>
           </div>
