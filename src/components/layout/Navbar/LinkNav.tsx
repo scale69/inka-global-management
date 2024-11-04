@@ -28,14 +28,11 @@ export function LinkNav({ data }: DataProps) {
               <ListItem href="/#layanan" title={data("Layanan.title")}>
                 {data("Layanan.PengurusanVisa.description")}
               </ListItem>
-              <ListItem
-                href="/#layanan"
-                title={data("Layanan.Terhubung.title")}
-              >
+              <ListItem href="#layanan" title={data("Layanan.Terhubung.title")}>
                 {data("Layanan.Terhubung.description")}
               </ListItem>
               <ListItem
-                href="/#layanan"
+                href="#layanan"
                 title={data("Layanan.InterpretasiPenerjemah.title")}
               >
                 {data("Layanan.InterpretasiPenerjemah.description")}
@@ -44,24 +41,26 @@ export function LinkNav({ data }: DataProps) {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/#profile" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {data("Link.Profile")}
-            </NavigationMenuLink>
+          <Link
+            href="#profile"
+            passHref
+            className={navigationMenuTriggerStyle()}
+          >
+            {data("Link.Profile")}
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/#visimisi" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {data("Link.VisiMisi")}
-            </NavigationMenuLink>
+          <Link
+            href="#visimisi"
+            passHref
+            className={navigationMenuTriggerStyle()}
+          >
+            {data("Link.VisiMisi")}
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {data("Link.About")}
-            </NavigationMenuLink>
+          <Link href="/about" passHref className={navigationMenuTriggerStyle()}>
+            {data("Link.About")}
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>

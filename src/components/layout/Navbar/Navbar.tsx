@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         <div>
           <Link
-            className="flex flex-col text-green-800 dark:text-white"
+            className="flex flex-col text-green-700  dark:text-white"
             href={"/"}
           >
             <span className="text-4xl font-bold">IGM</span>

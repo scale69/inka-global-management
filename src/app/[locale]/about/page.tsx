@@ -1,8 +1,8 @@
-import Contact from "@/components/layout/About/contact";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";
 import Markdown from "./Markdown";
+import Link from "next/link";
 
 export default function Page() {
   const data = useTranslations("data");
@@ -31,47 +31,14 @@ export default function Page() {
             </h2>
             <div className="flex flex-col items-center justify-center lg:flex-row gap-10 w-full">
               <div className="relative w-60 h-60 md:w-96 md:h-96 rounded-full shadow-md overflow-hidden">
-                <Image src="/img/me.png" alt="me-photo" fill quality={75} />
+                <Image
+                  src="/img/profile-me.jpeg"
+                  alt="me-photo"
+                  fill
+                  quality={75}
+                  className="object-cover"
+                />
               </div>
-              {/* <div className="space-y-2">
-                <p className="text-sm text-justify max-w-2xl">
-                  Sebagai CEO, saya merasa terhormat untuk memimpin perusahaan
-                  yang didedikasikan sepenuhnya dalam mendukung tenaga kerja
-                  Indonesia mewujudkan impian mereka berkarier di Jepang. Di
-                  IGM, kami percaya bahwa setiap orang berhak mendapatkan
-                  kesempatan untuk berkembang dan mencapai kesuksesan, tidak
-                  hanya bagi diri mereka sendiri tetapi juga bagi keluarga dan
-                  masyarakat yang lebih luas.
-                </p>
-                <p className="text-sm text-justify max-w-2xl">
-                  Visi kami sederhana namun kuat: menjembatani dunia kerja
-                  internasional dengan menyediakan layanan yang menyeluruh,
-                  mulai dari pengurusan visa hingga perpindahan karier, serta
-                  mendukung adaptasi bahasa dan budaya Jepang. Kami berkomitmen
-                  untuk memberikan solusi yang tepat dan dukungan berkelanjutan,
-                  karena kami memahami bahwa proses ini tidak selalu mudah.
-                  Namun, melalui dedikasi dan kerja keras, kami percaya bahwa
-                  bersama-sama, kita bisa meraih kesuksesan.
-                </p>
-                <p className="text-sm text-justify max-w-2xl">
-                  Melalui filosofi kerja kami yang berbasis pada kepercayaan,
-                  keahlian, dan kerja sama yang saling menguntungkan, IGM
-                  bertekad menjadi mitra terpercaya yang membantu Anda mencapai
-                  tujuan profesional dan pribadi di Jepang. Kami terus berupaya
-                  meningkatkan layanan kami agar selalu relevan dan tepat
-                  sasaran, memastikan bahwa setiap langkah yang Anda ambil
-                  bersama kami adalah langkah menuju masa depan yang lebih baik.
-                </p>
-                <p className="text-sm text-justify max-w-2xl">
-                  Terima kasih telah mempercayakan perjalanan Anda kepada kami.
-                  Kami siap mendampingi Anda dalam setiap langkah untuk meraih
-                  karier dan kehidupan yang lebih baik di Jepang.
-                </p>
-                <div className="flex flex-col pt-5">
-                  <span>Anidika Pramana</span>
-                  <span>CEO, Inka Global Management (IGM)</span>
-                </div>
-              </div> */}
               <div className="text-sm text-justify max-w-2xl porse">
                 <Markdown isi={data("CEO_Message")} />
               </div>
@@ -87,7 +54,7 @@ export default function Page() {
               loading="lazy"
             ></iframe>
             <div>
-              <a
+              <Link
                 href="https://maps.app.goo.gl/AUYSpJPhkdYoL19AA"
                 target="_blank"
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -97,11 +64,9 @@ export default function Page() {
                   〒 533-0023 大阪府大阪市東淀川区東淡路4丁目17-15
                   岩瀬スペース213号室
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
-
-          <Contact />
         </div>
       </div>
     </div>

@@ -5,12 +5,13 @@
       "Profile": "Profile",
       "VisiMisi": "Vision and Mission",
       "Testimoni": "Testimonials",
-      "About": "About Us"
+      "About": "About Us",
+      "Galery": "Inka Galery"
     },
     "Header": {
       "subTitle": "We connect 120,000 Indonesian Workers",
       "title": "Make your dream of working in Japan come true.",
-      "description": "Inka Global Management (IGM) is a company committed to supporting Indonesian workers in developing their careers in Japan through comprehensive services, ranging from visa processing, job transitions, to interpretation and translation, as well as study tours and referrals to Japanese language schools. With extensive experience and a wide network, we ensure that every worker and company finds the best sustainable solutions."
+      "description": "Inka Global Management (IGM) focuses on foreign human resource management services, specifically for Indonesian workers who aspire to work in Japan. We offer comprehensive solutions for visa applications, interpretation, and translation to ensure that every worker receives the best opportunities and protection while working in Japan. Additionally, IGM's travel services cater to business visits and cultural explorations, providing a comfortable and safe experience in Japan."
     },
     "Filosofi": {
       "title": "Philosophy",
@@ -37,14 +38,19 @@
       "SekolahBahasaJepang": {
         "title": "Japanese Language School",
         "description": "For those who want to improve their Japanese language skills, IGM provides a referral service to accredited Japanese language schools. We help prospective students find schools that meet their needs and language proficiency levels, from beginner to advanced."
+      },
+      "Travel": {
+        "title": "Travel",
+        "description": "A travel service designed to meet your travel needs in Japan. Whether for personal visits, business trips, or cultural exploration, we offer support in planning travel routes, accommodation, and local transportation, with special attention to comfort and safety.\n\nWith an extensive partnership network and deep understanding of Japan, IGM’s travel service ensures your travel experience is easier, smoother, and memorable."
       }
     },
     "Profile": {
       "title": "Profile",
-      "description": "Inka Global Management (IGM) is a company focused on foreign human resource management services, particularly for Indonesian workers who wish to work in Japan. We are committed to providing comprehensive solutions in terms of visa processing, interpretation, and translation, while ensuring that every worker gets the best opportunities and protection during their employment in Japan.",
+      "description": "Inka Global Management (IGM) is a company that supports Indonesian workers in developing their careers in Japan. We provide comprehensive services, from visa processing, job transitions, interpretation and translation, to introductions to Japanese language schools and travel services for business or cultural exploration. With extensive experience and networks, IGM ensures a smooth adaptation process in Japan, helping our clients achieve success in an international environment.",
       "Licence": {
         "igm": "Licence IGM",
-        "tsk": "Licence Torokushiken"
+        "tsk": "Licence Torokushiken",
+        "travel": "Licence Travel"
       }
     },
     "VisiMisi": {
@@ -68,16 +74,12 @@
       "Question": {
         "1": "What services does Inka Global Management (IGM) offer?",
         "2": "How does IGM assist with visa processing for Indonesian workers?",
-        "3": "Does IGM provide services for job transitions in Japan?",
-        "4": "How does IGM support workers who want to learn Japanese?",
-        "5": "What is IGM's Connect Company service?"
+        "3": "Does IGM provide services for job transitions in Japan?"
       },
       "Answer": {
         "1": "IGM offers a variety of services for Indonesian workers in Japan, including visa processing (extensions and status changes), job transitions, introductions to Japanese companies (Connect Company), interpretation and translation services, study tour programs, and referrals to Japanese language schools (shoukai nihongo gakko).",
         "2": "IGM assists with engineer and specified skilled worker (tokutei-ginou) visas, as well as visa extensions. For visa status changes, IGM helps workers transition from trainee to tokutei-ginou or engineer visas by ensuring they meet requirements such as JFT A2 and SSW for tokutei-ginou, and appropriate diplomas for engineer visas.",
-        "3": "Yes, IGM offers job transition services for foreign workers in Japan who are seeking new job opportunities. This service includes career consultations, visa document processing if needed, and job searches that align with the worker's qualifications.",
-        "4": "IGM provides referral services to accredited Japanese language schools (shoukai nihongo gakko). We assist workers or students in finding language schools that fit their needs and skill levels, whether they are preparing to work in Japan or improving their language skills while working in Japan.",
-        "5": "IGM's Connect Company service helps Indonesian workers in Japan find jobs that match their qualifications. IGM collaborates with companies in various sectors, such as engineering, manufacturing, and hospitality, to match workers with the right corporate needs, creating sustainable employment opportunities."
+        "3": "Yes, IGM offers job transition services for foreign workers in Japan who are seeking new job opportunities. This service includes career consultations, visa document processing if needed, and job searches that align with the worker's qualifications."
       }
     },
     "CEO_Message": "As CEO, I am honored to lead a company that is fully dedicated to supporting Indonesian workers in realizing their dreams of pursuing a career in Japan. At IGM, we believe that everyone deserves the opportunity to grow and succeed, not just for themselves but also for their families and the broader community. \n\nOur vision is simple yet powerful: to bridge the international workforce by providing comprehensive services, from visa processing to career transitions, while supporting adaptation to Japanese language and culture. We are committed to offering the right solutions and ongoing support, as we understand that this process is not always easy. However, through dedication and hard work, we believe that together, we can achieve success. \n\nThrough our work philosophy, based on trust, expertise, and mutually beneficial collaboration, IGM is determined to be your trusted partner in helping you achieve both professional and personal goals in Japan. We continuously strive to enhance our services, ensuring they remain relevant and effective, making every step you take with us a step towards a better future. \n\nThank you for entrusting your journey to us. We are ready to support you every step of the way in achieving a better career and life in Japan.\n\nAnidika Pramana \nCEO, Inka Global Management (IGM)"

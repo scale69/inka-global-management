@@ -1,5 +1,5 @@
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdMarkEmailRead, MdOutlinePhoneEnabled } from "react-icons/md";
 
@@ -7,7 +7,7 @@ export default function Footer() {
   const data = useTranslations("data");
 
   return (
-    <footer className="flex flex-col items-center justify-center h-max  bg-slate-50 w-full">
+    <footer className="flex flex-col items-center justify-center h-max  bg-slate-50 dark:bg-black w-full">
       <div className="flex flex-col md:flex-row gap-10 md:w-[800px] py-10 px-5 md:px-10 lg:px-20 lg:w-[1200px] justify-between">
         <div className="w-max flex flex-col gap-5">
           <h1 className="text-2xl font-bold">Inka Global Management</h1>
@@ -32,12 +32,12 @@ export default function Footer() {
             </span>
           </a>
           <a
-            href="mailto:andikapramana1988@gmail.com"
+            href="mailto:inkaglobalmanagement@gmail.com"
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           >
             <MdMarkEmailRead size={25} />
             <span className="text-sm lg:text-base max-w-xs ">
-              andikapramana1988@gmail.com
+              inkaglobalmanagement@gmail.com
             </span>
           </a>
         </div>

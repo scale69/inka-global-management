@@ -6,17 +6,15 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import { BsBuildingCheck } from "react-icons/bs";
-import { RiTranslate } from "react-icons/ri";
+import { BsBuildingCheck, BsTranslate } from "react-icons/bs";
 import { MdTravelExplore } from "react-icons/md";
 import { IoSchoolOutline } from "react-icons/io5";
 import { GrDocumentTime } from "react-icons/gr";
 import { motion } from "framer-motion";
 
-import { Button } from "../ui/button";
-import { Link } from "@/i18n/routing";
 import { fadeIn } from "@/lib/Framer/Variants";
 import { useTranslations } from "next-intl";
+import { FaPlaneArrival } from "react-icons/fa";
 
 type LayananProps = {
   id: number;
@@ -54,7 +52,7 @@ export default function Layanan() {
     {
       id: 3,
       icon: (
-        <RiTranslate
+        <BsTranslate
           size={40}
           className="text-green-700 p-1 border-[3px] border-green-700 rounded-2xl"
         />
@@ -83,6 +81,17 @@ export default function Layanan() {
       ),
       title: data("Layanan.SekolahBahasaJepang.title"),
       description: data("Layanan.SekolahBahasaJepang.description"),
+    },
+    {
+      id: 6,
+      icon: (
+        <FaPlaneArrival
+          size={40}
+          className="text-green-700 p-1 border-[3px] border-green-700 rounded-2xl"
+        />
+      ),
+      title: data("Layanan.Travel.title"),
+      description: data("Layanan.Travel.description"),
     },
   ];
 
@@ -115,13 +124,7 @@ export default function Layanan() {
               <CardContent className="text-sm text-justify">
                 {item.description}
               </CardContent>
-              <CardFooter>
-                {item.selengkapnya && (
-                  <Button asChild>
-                    <Link href={"/visa"}>Selengkapnya</Link>
-                  </Button>
-                )}
-              </CardFooter>
+              <CardFooter></CardFooter>
             </Card>
           </motion.div>
         ))}

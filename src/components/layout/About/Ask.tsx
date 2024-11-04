@@ -12,7 +12,7 @@ type DataProps = {
 
 export default function Ask({ data }: DataProps) {
   return (
-    <div className="space-y-10 w-full flex justify-center items-center h-full md:w-[750px] p-5">
+    <div className="space-y-10 w-full flex justify-center items-center h-full md:w-[750px] p-5 py-20">
       <Card className="w-full max-w-3xl lg:w-[768px] p-10">
         <h1 className="w-full text-center text-3xl font-semibold">QnA</h1>
         <Accordion type="single" collapsible className="w-full">
@@ -29,14 +29,6 @@ export default function Ask({ data }: DataProps) {
           <AccordionItem value="item-3">
             <AccordionTrigger>{data("QnA.Question.3")}</AccordionTrigger>
             <AccordionContent>{data("QnA.Answer.3")}</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>{data("QnA.Question.4")}</AccordionTrigger>
-            <AccordionContent>{data("QnA.Answer.4")}</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-5">
-            <AccordionTrigger>{data("QnA.Question.5")}</AccordionTrigger>
-            <AccordionContent>{data("QnA.Answer.5")}</AccordionContent>
           </AccordionItem>
         </Accordion>
       </Card>

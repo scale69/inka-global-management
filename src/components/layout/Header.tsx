@@ -7,6 +7,9 @@ export default function Header({ data }: DataProps) {
   return (
     <div className="flex flex-col justify-between items-center  lg:flex-row gap-10 p-5 md:px-24   w-full h-full lg:h-screen">
       <div className="flex flex-col gap-5 md:max-w-xl lg:max-w-2xl">
+        <div className="relative w-full h-48 md:h-96 ">
+          <Image src="/igm-logo.png" alt="logo-igm" fill quality={75} />
+        </div>
         <div className="flex items-center gap-1 bg-white dark:border shadow-md rounded-full px-4 py-2">
           <TbWorld size={24} className="dark:text-black" />
           <span className="text-xs dark:text-black">
@@ -46,7 +49,7 @@ export default function Header({ data }: DataProps) {
           </div>
           <div className="relative w-[400px] h-[497px]  rounded-3xl overflow-hidden">
             <Image
-              src={"/img/header.png"}
+              src={"/img/testimoni/2.jpeg"}
               alt="header-image"
               fill
               quality={100}
