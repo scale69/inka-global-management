@@ -13,11 +13,13 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         <div>
           <Link
-            className="flex flex-col text-green-700  dark:text-white"
+            className="flex flex-col text-[#05B49F]  dark:text-white"
             href={"/"}
           >
             <span className="text-4xl font-bold">IGM</span>
-            <span className="text-xs italic">Inka Global Management</span>
+            <span className="text-xs italic font-semibold">
+              Inka Global Management
+            </span>
           </Link>
         </div>
         <div className="hidden md:block">

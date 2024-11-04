@@ -35,6 +35,14 @@ export default function MobileNav() {
                 className="w-full"
                 onClick={() => setSheetOpen(false)}
               >
+                <Link href={"/"}>{data("Link.Home")}</Link>
+              </Button>
+              <Button
+                asChild
+                variant={"outline"}
+                className="w-full"
+                onClick={() => setSheetOpen(false)}
+              >
                 <Link href={"/#layanan"}>{data("Layanan.title")}</Link>
               </Button>
               <Button
