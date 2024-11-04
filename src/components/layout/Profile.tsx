@@ -87,7 +87,7 @@ export default function Profile({ data }: DataProps) {
 
           <div className="relative w-[400px] h-[497px]  rounded-b-full overflow-hidden">
             <Image
-              src={"/img/testimoni/4.jpeg"}
+              src={"/img/testimoni/4.png"}
               alt="header-image"
               fill
               quality={100}

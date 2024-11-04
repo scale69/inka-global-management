@@ -49,7 +49,7 @@ export default function Header({ data }: DataProps) {
           </div>
           <div className="relative w-[400px] h-[497px]  rounded-3xl overflow-hidden">
             <Image
-              src={"/img/testimoni/2.jpeg"}
+              src={"/img/testimoni/2.png"}
               alt="header-image"
               fill
               quality={100}
