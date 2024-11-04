@@ -28,7 +28,7 @@ export default function Testimoni() {
             className="flex items-center text-green-700 gap-5"
           >
             <FaBuildingUser size={50} />
-            <span className="text-3xl font-semibold">
+            <span className="text-xl md:text-3xl lg:text-4xl  font-semibold">
               {data("Layanan.StudiBunding.title")}
             </span>
           </motion.div>
@@ -56,7 +56,7 @@ export default function Testimoni() {
             className="flex flex-row-reverse items-center text-green-700 gap-5"
           >
             <BsTranslate size={50} />
-            <span className="text-3xl font-semibold">
+            <span className="text-xl md:text-3xl lg:text-4xl  font-semibold">
               {data("Layanan.InterpretasiPenerjemah.title")}
             </span>
           </motion.div>
@@ -83,7 +83,7 @@ export default function Testimoni() {
             className="flex flex-row items-center text-green-700 gap-5"
           >
             <IoMdSchool size={50} />
-            <span className="text-3xl font-semibold">
+            <span className="text-xl md:text-3xl lg:text-4xl  font-semibold">
               {data("Layanan.SekolahBahasaJepang.title")}
             </span>
           </motion.div>
@@ -135,7 +135,7 @@ export default function Testimoni() {
             className="flex flex-row-reverse items-center text-green-700 gap-5"
           >
             <GrUserWorker size={50} />
-            <span className="text-3xl font-semibold">
+            <span className="text-xl md:text-3xl lg:text-4xl  font-semibold">
               {data("Layanan.Terhubung.title")}
             </span>
           </motion.div>

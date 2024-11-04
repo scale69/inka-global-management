@@ -5,12 +5,12 @@ type DataProps = {
 };
 export default function Header({ data }: DataProps) {
   return (
-    <div className="flex flex-col justify-between items-center  lg:flex-row gap-10 p-5 md:px-24   w-full h-full lg:h-screen">
+    <div className="flex flex-col items-center justify-center gap-10  xl:gap-32   lg:flex-row  p-5  xl:px-24   w-full h-full lg:h-screen">
       <div className="flex flex-col gap-5 md:max-w-xl lg:max-w-2xl">
-        <div className="relative w-full h-48 md:h-96 ">
+        <div className="relative w-full h-48 md:h-64 lg:h-80 ">
           <Image src="/igm-logo.png" alt="logo-igm" fill quality={75} />
         </div>
-        <div className="flex items-center gap-1 bg-white dark:border shadow-md rounded-full px-4 py-2">
+        <div className="flex items-center mt-5 gap-1 bg-white dark:border shadow-md rounded-full px-4 py-2">
           <TbWorld size={24} className="dark:text-black" />
           <span className="text-xs dark:text-black">
             {data("Header.subTitle")}

@@ -6,9 +6,13 @@ import { MdMarkEmailRead, MdOutlinePhoneEnabled } from "react-icons/md";
 export default function Footer() {
   const data = useTranslations("data");
 
+  const date = new Date();
+
+  const year = date.getFullYear();
+
   return (
     <footer className="flex flex-col items-center justify-center h-max  bg-slate-50 dark:bg-black w-full">
-      <div className="flex flex-col md:flex-row gap-10 md:w-[800px] py-10 px-5 md:px-10 lg:px-20 lg:w-[1200px] justify-between">
+      <div className="flex flex-col md:flex-row gap-10 md:w-[800px] py-10 px-5 md:px-10 lg:px-36 xl:px-20 lg:w-[1200px] justify-between">
         <div className="w-max flex flex-col gap-5">
           <h1 className="text-2xl font-bold">Inka Global Management</h1>
           <a
@@ -41,7 +45,7 @@ export default function Footer() {
             </span>
           </a>
         </div>
-        <div className="w-max ">
+        <div className="w-max text-slate-800 dark:text-zinc-400 ">
           <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="/#layanan"
@@ -56,7 +60,7 @@ export default function Footer() {
           </Link>
           <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="#"
+            href="/#testimoni"
           >
             {data("Link.Testimoni")}
           </Link>
@@ -74,8 +78,8 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="bg-black/90 py-2 flex justify-center items-center text-white text-xs w-full">
-        scale
+      <div className="bg-slate-200 dark:bg-black/90 py-2 flex justify-center items-center dark:text-white text-xs w-full">
+        © 2022 - {year} INKA GLOBAL MANAGEMENT. All Rights Reserved by Scale.
       </div>
     </footer>
   );

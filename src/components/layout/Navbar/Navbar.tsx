@@ -29,7 +29,7 @@ export default function Navbar() {
           </div>
           <LanguageButton />
           <div className="flex md:hidden">
-            <MobileNav data={data} />
+            <MobileNav />
           </div>
         </div>
       </div>
