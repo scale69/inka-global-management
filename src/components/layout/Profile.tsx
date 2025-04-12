@@ -43,7 +43,7 @@ export default function Profile({ data }: DataProps) {
                 </div>
               </div>
             </Card>
-            <Card className="flex flex-col  p-4 dark:bg-black/70 ">
+            {/* <Card className="flex flex-col  p-4 dark:bg-black/70 ">
               <div className="flex items-center gap-4">
                 <GrLicense size={35} className="text-amber-500" />
                 <div className="flex flex-col">
@@ -53,7 +53,7 @@ export default function Profile({ data }: DataProps) {
                   <span>22登-007999</span>
                 </div>
               </div>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

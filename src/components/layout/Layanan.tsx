@@ -82,17 +82,17 @@ export default function Layanan() {
       title: data("Layanan.SekolahBahasaJepang.title"),
       description: data("Layanan.SekolahBahasaJepang.description"),
     },
-    {
-      id: 6,
-      icon: (
-        <FaPlaneArrival
-          size={40}
-          className="text-green-700 p-1 border-[3px] border-green-700 rounded-2xl"
-        />
-      ),
-      title: data("Layanan.Travel.title"),
-      description: data("Layanan.Travel.description"),
-    },
+    // {
+    //   id: 6,
+    //   icon: (
+    //     <FaPlaneArrival
+    //       size={40}
+    //       className="text-green-700 p-1 border-[3px] border-green-700 rounded-2xl"
+    //     />
+    //   ),
+    //   title: data("Layanan.Travel.title"),
+    //   description: data("Layanan.Travel.description"),
+    // },
   ];
 
   return (
