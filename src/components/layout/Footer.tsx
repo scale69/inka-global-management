@@ -22,8 +22,7 @@ export default function Footer() {
           >
             <IoLocationSharp size={25} />
             <span className="text-sm lg:text-base max-w-xs ">
-              〒 533-0023 大阪府大阪市東淀川区東淡路4丁目17-15
-              岩瀬スペース213号室
+              {data("About.address")}
             </span>
           </a>
           <a

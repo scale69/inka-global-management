@@ -27,7 +27,7 @@ export default function Page() {
           </div>
           <div className="space-y-10 bg-slate-50 dark:bg-black w-full py-20 px-5 md:px-10">
             <h2 className="w-full text-center text-2xl font-semibold">
-              ご﻿挨﻿拶
+              {data("About.title")}
             </h2>
             <div className="flex flex-col items-center justify-center lg:flex-row gap-10 w-full">
               <div className="relative w-60 h-60 md:w-96 md:h-96 rounded-full shadow-md overflow-hidden">
@@ -40,13 +40,13 @@ export default function Page() {
                 />
               </div>
               <div className="text-sm text-justify max-w-2xl porse">
-                <Markdown isi={data("CEO_Message")} />
+                <Markdown isi={data("About.CEO_Message")} />
               </div>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-5 w-full  h-full p-5">
             <h2 className="w-full text-center text-2xl font-semibold">
-              アクセ﻿ス﻿マ﻿ッ﻿プ
+              {data("About.map")}
             </h2>
             <iframe
               className="w-full md:max-w-3xl h-[300px]"
@@ -60,10 +60,7 @@ export default function Page() {
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               >
                 <IoLocationSharp size={20} />
-                <span className="text-sm">
-                  〒 533-0023 大阪府大阪市東淀川区東淡路4丁目17-15
-                  岩瀬スペース213号室
-                </span>
+                <span className="text-sm">{data("About.address")}</span>
               </Link>
             </div>
           </div>
