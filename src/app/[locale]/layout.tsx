@@ -21,7 +21,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "IGM",
-  description: "Berangkat Ke jepang",
+  description:
+    "Inka Global Management (IGM) mendukung tenaga kerja Indonesia di Jepang melalui layanan visa, alih kerja, interpretasi, sekolah bahasa, dan travel profesional.",
 };
 
 export default async function RootLayout({
