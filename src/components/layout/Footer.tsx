@@ -78,8 +78,11 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="bg-slate-200 dark:bg-black/90 py-2 flex justify-center items-center dark:text-white text-xs w-full">
-        © 2022 - {year} INKA GLOBAL MANAGEMENT. All Rights Reserved by Scale.
+      <div className="bg-slate-200 dark:bg-black/90 py-2  flex flex-col md:gap-1 md:flex-row justify-center items-center dark:text-white text-xs w-full">
+        <span>© 2022 - {year} INKA GLOBAL MANAGEMENT.</span>
+        <span className="text-[10px] md:text-xs">
+          All Rights Reserved by Scale.
+        </span>
       </div>
     </footer>
   );
