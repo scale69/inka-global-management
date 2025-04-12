@@ -14,7 +14,6 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "@/lib/Framer/Variants";
 import { useTranslations } from "next-intl";
-import { FaPlaneArrival } from "react-icons/fa";
 
 type LayananProps = {
   id: number;
