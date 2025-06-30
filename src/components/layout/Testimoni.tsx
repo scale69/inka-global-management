@@ -167,6 +167,24 @@ export default function Testimoni() {
                   className="object-cover"
                 />
               </div>
+              <div className="flex relative items-center justify-center w-[300px] overflow-hidden h-[400px]  ">
+                <Image
+                  fill
+                  quality={75}
+                  src={"/img/testimoni/12.png"}
+                  alt="zoom-meeting"
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex relative items-center justify-center w-[300px] overflow-hidden h-[400px]  ">
+                <Image
+                  fill
+                  quality={75}
+                  src={"/img/testimoni/13.png"}
+                  alt="enginner-to-japan"
+                  className="object-cover"
+                />
+              </div>
             </Carousel>
           </motion.div>
         </div>
