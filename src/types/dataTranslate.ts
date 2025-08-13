@@ -1,6 +1,9 @@
 export interface TypeDataTranslate {
   data: Data;
 }
+export type DataProps = {
+  data: (key: string) => string;
+};
 
 export interface Data {
   Link: Link;

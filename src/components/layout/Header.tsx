@@ -1,8 +1,7 @@
+import { DataProps } from "@/types/dataTranslate";
 import Image from "next/image";
 import { TbWorld } from "react-icons/tb";
-type DataProps = {
-  data: (key: string) => string;
-};
+
 export default function Header({ data }: DataProps) {
   return (
     <div className="flex flex-col items-center justify-center gap-10  xl:gap-32   lg:flex-row  p-5  xl:px-24   w-full h-full lg:h-screen">
@@ -49,7 +48,7 @@ export default function Header({ data }: DataProps) {
           </div>
           <div className="relative w-[400px] h-[497px]  rounded-3xl overflow-hidden">
             <Image
-              src={"/img/testimoni/2.png"}
+              src={"/img/testimoni/InterpretationTranslation1.png"}
               alt="header-image"
               fill
               quality={100}

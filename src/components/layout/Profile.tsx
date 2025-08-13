@@ -43,17 +43,6 @@ export default function Profile({ data }: DataProps) {
                 </div>
               </div>
             </Card>
-            {/* <Card className="flex flex-col  p-4 dark:bg-black/70 ">
-              <div className="flex items-center gap-4">
-                <GrLicense size={35} className="text-amber-500" />
-                <div className="flex flex-col">
-                  <span className="font-semibold text-amber-500">
-                    {data("Profile.Licence.travel")}
-                  </span>
-                  <span>22登-007999</span>
-                </div>
-              </div>
-            </Card> */}
           </div>
         </div>
       </div>
@@ -87,7 +76,7 @@ export default function Profile({ data }: DataProps) {
 
           <div className="relative w-[400px] h-[497px]  rounded-b-full overflow-hidden">
             <Image
-              src={"/img/testimoni/4.png"}
+              src={"/img/testimoni/JapanaeseLanguageShool3.png"}
               alt="header-image"
               fill
               quality={100}
