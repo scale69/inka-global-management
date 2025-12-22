@@ -2,11 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "@/components/layout/Navbar/Navbar";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
-import Footer from "@/components/layout/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = localFont({
@@ -26,23 +21,13 @@ export const metadata: Metadata = {
     "Inka Global Management (IGM) mendukung tenaga kerja Indonesia di Jepang melalui layanan visa, alih kerja, interpretasi, sekolah bahasa, dan travel profesional.",
 };
 
-export function generateStaticParams() {
-  return [{ locale: "id" }, { locale: "en" }, { locale: "jp" }];
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = await params;
-
-
-  const messages = await getMessages({ locale });
   return (
-    <html className="scroll-smooth" lang={locale} suppressHydrationWarning>
+    <html className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F1F4F5] dark:bg-[#121212]`}
         suppressHydrationWarning
@@ -54,13 +39,7 @@ export default async function RootLayout({
           storageKey="igm-theme"
           disableTransitionOnChange
         >
-          <NextIntlClientProvider messages={messages}>
-            <AntdRegistry>
-              <Navbar />
-              {children}
-              <Footer />
-            </AntdRegistry>
-          </NextIntlClientProvider>
+          {children}
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-9MR8807XVF" />
