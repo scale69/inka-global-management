@@ -42,7 +42,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId="G-9MR8807XVF" />
+      {/* <GoogleAnalytics gaId="G-9MR8807XVF" /> */}
     </html>
   );
 }
