@@ -4,10 +4,10 @@ import Layanan from "@/components/layout/Layanan";
 import Profile from "@/components/layout/Profile";
 import Testimoni from "@/components/layout/Testimoni";
 import VisiMisi from "@/components/layout/VisiMisi";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
-  const data = useTranslations("data");
+export default async function Home() {
+  const data = await getTranslations("data");
 
   return (
     <main className=" flex flex-col justify-center items-center w-full min-h-screen py-24 lg:py-10">
