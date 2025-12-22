@@ -67,24 +67,3 @@ export default async function RootLayout({
     </html>
   );
 }
-
-
-
-// import "./globals.css";
-
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode
-// }) {
-//   return (
-//     <html
-//       className="scroll-smooth"
-//       lang="en"
-//       data-theme="light" // bisa pakai atribut data-theme
-//       suppressHydrationWarning
-//     >
-//       <body>{children}</body>
-//     </html>
-//   )
-// }
