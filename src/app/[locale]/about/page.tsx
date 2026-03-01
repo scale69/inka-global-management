@@ -1,11 +1,11 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";
 import Markdown from "./Markdown";
 import Link from "next/link";
 
-export default function Page() {
-  const data = useTranslations("data");
+export default async function Page() {
+  const data = await getTranslations("data");
 
   return (
     <div className="flex flex-col items-center justify-center py-28 w-full h-full">

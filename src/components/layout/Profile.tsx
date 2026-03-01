@@ -53,7 +53,9 @@ export default function Profile({ data }: DataProps) {
               width={46}
               height={46}
               alt="icons"
-              src={"/icons/status-up.svg"}
+              src="/icons/status-up.svg"
+              className="object-contain"
+              style={{ height: 'auto' }}
             />
             <div className="flex flex-col justify-center items-center gap-1">
               <span className="text-2xl">+80%</span>
@@ -66,7 +68,9 @@ export default function Profile({ data }: DataProps) {
               width={46}
               height={46}
               alt="icons"
-              src={"/icons/cloud-add.svg"}
+              src="/icons/cloud-add.svg"
+              className="object-contain"
+              style={{ height: 'auto' }}
             />
             <div className="flex flex-col gap-1">
               <span>99,9%</span>
@@ -80,6 +84,7 @@ export default function Profile({ data }: DataProps) {
               alt="header-image"
               fill
               quality={100}
+              sizes="400px"
             />
           </div>
         </div>
