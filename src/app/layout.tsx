@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "Inka Global Management",
   description:
     "Inka Global Management (IGM) mendukung tenaga kerja Indonesia di Jepang melalui layanan visa, alih kerja, interpretasi, sekolah bahasa, dan travel profesional.",
+  openGraph: {
+    siteName: "IGM",
+    title: "Inka Global Management",
+  },
 };
 
 export default function RootLayout({
