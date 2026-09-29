@@ -7,7 +7,14 @@ export default function Header({ data }: DataProps) {
     <div className="flex flex-col items-center justify-center gap-10  xl:gap-32   lg:flex-row  p-5  xl:px-24   w-full h-full lg:h-screen">
       <div className="flex flex-col gap-5 md:max-w-xl lg:max-w-2xl">
         <div className="relative w-full h-48 md:h-64 lg:h-80 ">
-          <Image src="/igm-logo.png" alt="logo-igm" fill quality={75} />
+          <Image
+            src="/igm-logo.png"
+            alt="logo-igm"
+            fill
+            quality={75}
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
         </div>
         <div className="flex items-center mt-5 gap-1 bg-white dark:border shadow-md rounded-full px-4 py-2">
           <TbWorld size={24} className="dark:text-black" />
@@ -27,7 +34,9 @@ export default function Header({ data }: DataProps) {
               width={46}
               height={46}
               alt="icons"
-              src={"/icons/cloud-add.svg"}
+              src="/icons/cloud-add.svg"
+              className="object-contain"
+              style={{ height: 'auto' }}
             />
             <div className="flex flex-col gap-1">
               <span>99,9%</span>
@@ -39,7 +48,9 @@ export default function Header({ data }: DataProps) {
               width={46}
               height={46}
               alt="icons"
-              src={"/icons/status-up.svg"}
+              src="/icons/status-up.svg"
+              className="object-contain"
+              style={{ height: 'auto' }}
             />
             <div className="flex flex-col justify-center items-center gap-1">
               <span className="text-3xl">+80%</span>
@@ -48,10 +59,11 @@ export default function Header({ data }: DataProps) {
           </div>
           <div className="relative w-[400px] h-[497px]  rounded-3xl overflow-hidden">
             <Image
-              src={"/img/testimoni/InterpretationTranslation1.png"}
+              src="/img/testimoni/InterpretationTranslation1.png"
               alt="header-image"
               fill
               quality={100}
+              sizes="400px"
             />
           </div>
         </div>

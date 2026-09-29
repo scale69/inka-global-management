@@ -1,7 +1,8 @@
+
+
 "use client";
 
 import * as React from "react";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -10,11 +11,19 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { IoLanguage } from "react-icons/io5";
-import { usePathname, useRouter } from "@/i18n/routing";
+import { usePathname, useRouter } from "next/navigation";
 
 export function LanguageButton() {
-  const pathname: string = usePathname();
   const router = useRouter();
+  const pathname = usePathname(); // e.g. /en/about
+  const segments = pathname.split("/").filter(Boolean); // ["en", "about"]
+
+  const switchLocale = (newLocale: string) => {
+    if (segments.length > 0) segments[0] = newLocale; // ganti locale segment pertama
+    else segments.unshift(newLocale); // untuk root path
+    const newPath = "/" + segments.join("/");
+    router.replace(newPath);
+  };
 
   return (
     <DropdownMenu>
@@ -24,20 +33,14 @@ export function LanguageButton() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem
-          onClick={() => router.replace(pathname, { locale: "jp" })}
-        >
+        <DropdownMenuItem onClick={() => switchLocale("jp")}>
           🇯🇵 日本語
         </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => router.replace(pathname, { locale: "id" })}
-        >
-          <span>🇮🇩 Indonesia</span>
+        <DropdownMenuItem onClick={() => switchLocale("id")}>
+          🇮🇩 Indonesia
         </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => router.replace(pathname, { locale: "en" })}
-        >
-          <span>🇺🇸 English</span>
+        <DropdownMenuItem onClick={() => switchLocale("en")}>
+          🇺🇸 English
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

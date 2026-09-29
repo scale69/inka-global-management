@@ -43,6 +43,16 @@ export default function Profile({ data }: DataProps) {
                 </div>
               </div>
             </Card>
+            <Card className="flex flex-col  p-4 dark:bg-black/70 ">
+              <div className="flex items-center gap-4">
+                <GrLicense size={35} className="text-amber-500" />
+                <div className="flex flex-col">
+                  <span className="font-semibold text-amber-500">
+                    {data("Profile.Licence.travel")}
+                  </span>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </div>
@@ -53,7 +63,9 @@ export default function Profile({ data }: DataProps) {
               width={46}
               height={46}
               alt="icons"
-              src={"/icons/status-up.svg"}
+              src="/icons/status-up.svg"
+              className="object-contain"
+              style={{ height: "auto" }}
             />
             <div className="flex flex-col justify-center items-center gap-1">
               <span className="text-2xl">+80%</span>
@@ -66,7 +78,9 @@ export default function Profile({ data }: DataProps) {
               width={46}
               height={46}
               alt="icons"
-              src={"/icons/cloud-add.svg"}
+              src="/icons/cloud-add.svg"
+              className="object-contain"
+              style={{ height: "auto" }}
             />
             <div className="flex flex-col gap-1">
               <span>99,9%</span>
@@ -80,6 +94,7 @@ export default function Profile({ data }: DataProps) {
               alt="header-image"
               fill
               quality={100}
+              sizes="400px"
             />
           </div>
         </div>
